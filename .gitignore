@@ -1,0 +1,6 @@
+# Ignore local builds of the textbook
+inpy/_build/*
+
+# Ignore repositories copied in
+inpy/tutorials/*
+inpy/assignments/*
