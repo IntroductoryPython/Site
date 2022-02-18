@@ -24,7 +24,7 @@ Currently, available materials include:
 ### License & Acknowledgments
 
 The materials on this website are openly available under a
-[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) license.
+[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) license.
 
 Introduction to Python, as well as this website, was created by
 [Tom Donoghue](https://tomdonoghue.github.io/), and is currently primarily taught & developed by
