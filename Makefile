@@ -29,6 +29,10 @@ clear:
 build:
 	jupyter-book build $(BOOK_NAME)/
 
+# Clean out the built textbook
+clean:
+	jupyter-book clean $(BOOK_NAME)/
+
 # Deploy the website
 deploy:
 
