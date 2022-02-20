@@ -1,28 +1,46 @@
-- file: docs/index
+root: docs/index
+format: jb-book
 
-- header: Tutorials
-- file: tutorials/00-Introduction
-- file: tutorials/01-Tools
-- file: tutorials/02-JupyterNotebooks
-- file: tutorials/03-Variables
-- file: tutorials/04-Operators
-- file: tutorials/05-Conditionals
-- file: tutorials/06-DataTypes
-- file: tutorials/07-Loops
-- file: tutorials/08-Encodings
-- file: tutorials/09-FunctionsI
-- file: tutorials/10-FunctionsII
-- file: tutorials/11-Debugging
-- file: tutorials/12-Algorithms
-- file: tutorials/13-Objects
-- file: tutorials/14-Classes
-- file: tutorials/15-Namespaces
-- file: tutorials/16-CommandLine
-- file: tutorials/17-APIs
-- file: tutorials/17-OpenSource
-- file: tutorials/18-Documentation
-- file: tutorials/19-CodeStyle
-- file: tutorials/20-CodeTesting
-- file: tutorials/21-CodeProjects
-- file: tutorials/22-AdvancedPython
-- file: tutorials/23-WrapUp
+parts:
+- caption: Tutorials
+  chapters:
+  - file: tutorials/00-Introduction
+  - file: tutorials/01-Tools
+  - file: tutorials/02-JupyterNotebooks
+  - file: tutorials/03-Variables
+  - file: tutorials/04-Operators
+  - file: tutorials/05-Conditionals
+  - file: tutorials/06-DataTypes
+  - file: tutorials/07-Loops
+  - file: tutorials/08-Encodings
+  - file: tutorials/09-FunctionsI
+  - file: tutorials/10-Algorithms
+  - file: tutorials/11-FunctionsII
+  - file: tutorials/12-Debugging
+  - file: tutorials/13-Objects
+  - file: tutorials/14-Classes
+  - file: tutorials/15-Namespaces
+  - file: tutorials/16-CommandLine
+  - file: tutorials/17-APIs
+  - file: tutorials/18-OpenSource
+  - file: tutorials/19-ScientificComputing
+  - file: tutorials/20-Documentation
+  - file: tutorials/21-CodeStyle
+  - file: tutorials/22-CodeTesting
+  - file: tutorials/23-CodeProjects
+  - file: tutorials/24-AdvancedPython
+  - file: tutorials/25-WrapUp
+  - file: tutorials/A1-Syntax
+  - file: tutorials/A2-Syntax
+
+- caption: Assignments
+  chapters:
+  - file: XX
+  - file: XX
+  - file: XX
+  - file: XX
+  - file: XX
+
+- caption: Project
+  chapters:
+  - file: projects/projects
