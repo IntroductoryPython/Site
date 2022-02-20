@@ -3,12 +3,12 @@
 title     : Introductory Python
 author    : Thomas Donoghue & Shannon Ellis
 copyright : "2020-"
-logo      : ""
+logo      : assets/logo.png
 
 #######################################################################################
 # Execution settings
 execute:
-  execute_notebooks           : cache
+  execute_notebooks           : 'off'
 
 #######################################################################################
 # HTML-specific settings
@@ -23,8 +23,16 @@ notebook_interface            : "notebook"
 # Launch button settings
 repository:
   url                         : https://github.com/introductorypython/
-  path_to_book                : "dsip"
+  path_to_book                : "inpy"
 
 binder:
   binderhub_url               : "https://mybinder.org"
   text                        : "Launch binder"
+
+#######################################################################################
+# HTML settings
+html:
+  favicon: assets/logo.png
+  use_repository_button: true
+  use_issues_button: true
+  use_edit_page_button: false
