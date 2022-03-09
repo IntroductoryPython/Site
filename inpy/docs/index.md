@@ -28,7 +28,7 @@ This set of online materials are an openly available version of the materials fr
 
 Available materials include:
 
-- **Tutorials**, which are quick introductions to key topics for learning Python
+- **Materials**, which are guided introductions to key topics for learning Python
 - **Assignments**, which are problem sets that can be worked through to practice coding
 - **Projects**, which describes how to pursue an independent coding project
 

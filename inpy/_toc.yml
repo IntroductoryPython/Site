@@ -2,45 +2,47 @@ root: docs/index
 format: jb-book
 
 parts:
-- caption: Tutorials
+- caption: Materials
   chapters:
-  - file: tutorials/00-Introduction
-  - file: tutorials/01-Tools
-  - file: tutorials/02-JupyterNotebooks
-  - file: tutorials/03-Variables
-  - file: tutorials/04-Operators
-  - file: tutorials/05-Conditionals
-  - file: tutorials/06-DataTypes
-  - file: tutorials/07-Loops
-  - file: tutorials/08-Encodings
-  - file: tutorials/09-FunctionsI
-  - file: tutorials/10-Algorithms
-  - file: tutorials/11-FunctionsII
-  - file: tutorials/12-Debugging
-  - file: tutorials/13-Objects
-  - file: tutorials/14-Classes
-  - file: tutorials/15-Namespaces
-  - file: tutorials/16-CommandLine
-  - file: tutorials/17-APIs
-  - file: tutorials/18-OpenSource
-  - file: tutorials/19-ScientificComputing
-  - file: tutorials/20-Documentation
-  - file: tutorials/21-CodeStyle
-  - file: tutorials/22-CodeTesting
-  - file: tutorials/23-CodeProjects
-  - file: tutorials/24-AdvancedPython
-  - file: tutorials/25-WrapUp
-  - file: tutorials/A1-Syntax
-  - file: tutorials/A2-Syntax
+  - file: materials/00-Introduction
+  - file: materials/01-Tools
+  - file: materials/02-JupyterNotebooks
+  - file: materials/03-Variables
+  - file: materials/04-Operators
+  - file: materials/05-Conditionals
+  - file: materials/06-DataTypes
+  - file: materials/07-Loops
+  - file: materials/08-Encodings
+  - file: materials/09-FunctionsI
+  - file: materials/10-Algorithms
+  - file: materials/11-FunctionsII
+  - file: materials/12-Debugging
+  - file: materials/13-Objects
+  - file: materials/14-Classes
+  - file: materials/15-Namespaces
+  - file: materials/16-CommandLine
+  - file: materials/17-APIs
+  - file: materials/18-OpenSource
+  - file: materials/19-ScientificComputing
+  - file: materials/20-Documentation
+  - file: materials/21-CodeStyle
+  - file: materials/22-CodeTesting
+  - file: materials/23-CodeProjects
+  - file: materials/24-AdvancedPython
+  - file: materials/25-WrapUp
+  - file: materials/A1-Syntax
+  - file: materials/A2-Syntax
 
-- caption: Assignments
-  chapters:
-  - file: XX
-  - file: XX
-  - file: XX
-  - file: XX
-  - file: XX
+#- caption: Assignments
+#  chapters:
+#  - file: XX
+#  - file: XX
+#  - file: XX
+#  - file: XX
+#  - file: XX
 
 - caption: Project
   chapters:
-  - file: projects/projects
+  - file: projects/overview.md
+  - file: projects/faq.md
+  - file: projects/ProjectIdeas.ipynb
