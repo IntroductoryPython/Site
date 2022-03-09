@@ -18,18 +18,20 @@ designed for people who want to learn to use code in the service of other goals.
 In terms of content, this course focuses on 'standard library' Python, meaning the
 collection of core functionality available in Python.
 
-Note that this course was developed in the a Cognitive Science department, such that
+Note that this course was developed in a Cognitive Science department, such that
 some of the examples and assignments are somewhat related to Cognitive Science.
 However, no previous knowledge in Cognitive Science is required.
 
 ### Content
 
-This set of online materials are an openly available version of the materials from the class version, that are available to anyone outside of the official course.
+This set of online materials are an openly available version of the materials from the class version,
+that are available to anyone outside of the official course.
 
 Available materials include:
 
 - **Materials**, which are guided introductions to key topics for learning Python
-- **Assignments**, which are problem sets that can be worked through to practice coding
+- **Labs**, are hands-on notebooks for practicing coding
+- **Assignments**, which are problem sets that can be worked through
 - **Projects**, which describes how to pursue an independent coding project
 
 All the materials are available through the table of contents on the left.
