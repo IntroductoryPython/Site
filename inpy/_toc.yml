@@ -33,13 +33,20 @@ parts:
   - file: materials/A1-Syntax
   - file: materials/A2-Syntax
 
-#- caption: Assignments
-#  chapters:
-#  - file: XX
-#  - file: XX
-#  - file: XX
-#  - file: XX
-#  - file: XX
+- caption: Labs
+  chapters:
+  - file: labs/CL1-ProgrammingI
+  - file: labs/CL2-ProgrammingII
+  - file: labs/CL3-AlgorithmicThinking
+  - file: labs/CL4-Exploring
+  - file: labs/CL5-CommandLine
+
+- caption: Assignments
+  chapters:
+  - file: assignments/D1-GettingStarted
+  - file: assignments/D2-Ciphers
+  - file: assignments/D3-Chatbots
+  - file: assignments/D4-ArtificialAgents
 
 - caption: Project
   chapters:

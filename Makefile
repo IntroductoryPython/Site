@@ -33,11 +33,32 @@ clone-materials:
 	@rm $(BOOK)/materials/README.md
 	@rm -rf $(BOOK)/materials/.git
 
+clone-labs:
+
+	# Clone coding labs repo, and copy out files (to re-org & rename)
+	@git clone --depth 1 $(CONTENT-ORG)/CodingLabs $(BOOK)/temp --branch tom --single-branch
+
+	@mkdir $(BOOK)/labs
+	@mv $(BOOK)/temp/CL1-ProgrammingI.ipynb $(BOOK)/labs/CL1-ProgrammingI.ipynb
+	@mv $(BOOK)/temp/CL2-ProgrammingII.ipynb $(BOOK)/labs/CL2-ProgrammingII.ipynb
+	@mv $(BOOK)/temp/CL3-AlgorithmicThinking.ipynb $(BOOK)/labs/CL3-AlgorithmicThinking.ipynb
+	@mv $(BOOK)/temp/CL4-Exploring.ipynb $(BOOK)/labs/CL4-Exploring.ipynb
+	@mv $(BOOK)/temp/CL6-CommandLine.ipynb $(BOOK)/labs/CL5-CommandLine.ipynb
+	@rm -rf $(BOOK)/temp
+
+
 clone-assignments:
 
-	# Copy assignments
-	# git clone --depth 1 $(CONTENT-ORG)/assignments $(BOOK)/assignments
-	# rm content/assignments/README.md
+	# Clone assignments repo, and copy out files (to re-org & rename)
+	@git clone --depth 1 $(CONTENT-ORG)/Assignments $(BOOK)/temp
+
+	# Copy over the files we want
+	@mkdir $(BOOK)/assignments
+	@mv $(BOOK)/temp/A1-GettingStarted.ipynb $(BOOK)/assignments/D1-GettingStarted.ipynb
+	@mv $(BOOK)/temp/A2-Ciphers.ipynb $(BOOK)/assignments/D2-Ciphers.ipynb
+	@mv $(BOOK)/temp/A3-Chatbots.ipynb $(BOOK)/assignments/D3-Chatbots.ipynb
+	@mv $(BOOK)/temp/A4-ArtificialAgents.ipynb $(BOOK)/assignments/D4-ArtificialAgents.ipynb
+	@rm -rf $(BOOK)/temp
 
 clone-projects:
 
