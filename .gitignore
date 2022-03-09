@@ -1,2 +1,5 @@
 # Ignore local builds of the textbook
 inpy/_build/*
+
+# Ignore checkpoint files
+**/.ipynb_checkpoints/**
