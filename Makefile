@@ -10,7 +10,7 @@
 ##########################################################################
 ## VARIABLES
 
-BOOK_NAME     = inpy
+BOOK          = inpy
 CONTENT-ORG   = https://github.com/COGS18
 BOOK-ORG      = https://github.com/introductorypython
 SITE-LOC      = introductorypython.github.io
@@ -22,28 +22,52 @@ SITE-LOC      = introductorypython.github.io
 # Clone the content repositories for making the website
 clone:
 
+	clone-materials
+	clone-assignments
+	clone-projects
+
+clone-materials:
+
 	# Copy  materials
-	@git clone --depth 1 $(CONTENT-ORG)/Materials $(BOOK_NAME)/tutorials
-	@rm $(BOOK_NAME)/tutorials/README.md
+	@git clone --depth 1 $(CONTENT-ORG)/Materials $(BOOK)/materials
+	@rm $(BOOK)/materials/README.md
+	@rm -rf $(BOOK)/materials/.git
+
+clone-assignments:
 
 	# Copy assignments
-	# git clone --depth 1 $(CONTENT-ORG)/assignments $(BOOK_NAME)/assignments
+	# git clone --depth 1 $(CONTENT-ORG)/assignments $(BOOK)/assignments
 	# rm content/assignments/README.md
 
-	
+clone-projects:
+
+	# Copy over the project repositories into temporary repositories
+	@git clone --depth 1 $(CONTENT-ORG)/Projects $(BOOK)/temp
+
+	# Copy over the files we want
+	@mkdir $(BOOK)/projects
+	@mv $(BOOK)/temp/overview.md $(BOOK)/projects/overview.md
+	@mv $(BOOK)/temp/faq.md $(BOOK)/projects/faq.md
+	@mv $(BOOK)/temp/ProjectIdeas.ipynb $(BOOK)/projects/ProjectIdeas.ipynb
+
+	# Clear out the temporary folders
+	@rm -rf $(BOOK)/temp
+
+
 ##########################################################################
 ## CLEAN UPS
 
 # Clear out the copied repositories
 clear:
 
-	# Clear tutorial materials
-	rm -rf $(BOOK_NAME)/tutorials
-	rm -rf $(BOOK_NAME)/assignments
-	
+	# Clear out copied materials
+	rm -rf $(BOOK)/materials
+	rm -rf $(BOOK)/assignments
+	rm -rf $(BOOK)/projects
+
 # Clean out the built textbook
 clean:
-	jupyter-book clean $(BOOK_NAME)/
+	jupyter-book clean $(BOOK)/
 
 
 ##########################################################################
@@ -51,7 +75,7 @@ clean:
 
 # Build the textbook
 build:
-	jupyter-book build $(BOOK_NAME)/
+	jupyter-book build $(BOOK)/
 
 ##########################################################################
 ## DEPLOYING SITE
@@ -63,14 +87,14 @@ deploy:
 	make build
 
 	# Clone the website host repository
-	rm -rf $(BOOK_NAME)/_build/deploy/
-	git clone --depth 1 $(BOOK-ORG)/$(SITE-LOC) $(BOOK_NAME)/_build/deploy/
+	rm -rf $(BOOK)/_build/deploy/
+	git clone --depth 1 $(BOOK-ORG)/$(SITE-LOC) $(BOOK)/_build/deploy/
 
 	# A .nojekyll file to tell Github pages to bypass Jekyll processing
-	touch $(BOOK_NAME)/_build/deploy/.nojekyll
+	touch $(BOOK)/_build/deploy/.nojekyll
 
 	# Copy site source into the host repo folder, then push to Github to deploy
-	cd $(BOOK_NAME)/_build/ && \
+	cd $(BOOK)/_build/ && \
 	cp -r html/ deploy && \
 	cd deploy && \
 	git add * && \
