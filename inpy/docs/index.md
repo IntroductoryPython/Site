@@ -10,10 +10,10 @@ _If you are in the COGS18 class at UC San Diego, this website is **not** the sam
 
 ### Overview
 
-The goal and focus of Introductory Python is as hands-on course for learning Python.
+The goal of Introductory Python is to serve as a hands-on course for learning Python.
 
 This course is focused on practical elements on becoming a _code user_, meaning it's
-designed for people who want to learn to use code in the service of other goals.
+designed for people who want to learn to use code to do things.
 
 In terms of content, this course focuses on 'standard library' Python, meaning the
 collection of core functionality available in Python.
@@ -29,10 +29,10 @@ that are available to anyone outside of the official course.
 
 Available materials include:
 
-- **Materials**, which are guided introductions to key topics for learning Python
-- **Labs**, are hands-on notebooks for practicing coding
-- **Assignments**, which are problem sets that can be worked through
-- **Projects**, which describes how to pursue an independent coding project
+- **Materials** are guided introductions to key topics for learning Python
+- **Labs** are hands-on notebooks for practicing coding
+- **Assignments** are problem sets that can be worked through
+- **Projects** describes how to pursue an independent coding project
 
 All the materials are available through the table of contents on the left.
 
