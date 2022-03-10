@@ -83,6 +83,7 @@ clear:
 
 	# Clear out copied materials
 	rm -rf $(BOOK)/materials
+	rm -rf $(BOOK)/labs
 	rm -rf $(BOOK)/assignments
 	rm -rf $(BOOK)/projects
 
